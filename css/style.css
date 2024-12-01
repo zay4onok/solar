@@ -23,21 +23,21 @@ body {
   color: #303030;
   font-size: 14px;
   line-height: 19px;
+  scroll-behavior: smooth;
 }
 
 .logo {
   margin-top: 70px;
 }
 
-.link-box {
-  position: relative;
-}
 .link-box__text {
-  position: absolute;
-  bottom: 18%;
-  left: 50%;
   font-size: 18px;
   line-height: 25px;
+  display: inline-block;
+  transform: translate(-40px, -20px);
+}
+.link-box__img {
+  transform: translate(15px, 0);
 }
 
 .social-media {
@@ -64,17 +64,18 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.header__subtitle {
+.header__info-subtitle {
   font-size: 18px;
   line-height: 25px;
 }
-.header__title {
+.header__info-title {
   font-weight: 700;
   font-size: 64px;
   line-height: 73px;
   margin-bottom: 50px;
 }
-.header__title span {
+.header__info-title span {
+  display: block;
   font-weight: 400;
   font-size: 42px;
   line-height: 57px;
