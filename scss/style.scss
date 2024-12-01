@@ -31,13 +31,13 @@ body {
 
 .link-box {
   position: relative;
-}
-.link-box__text {
-  position: absolute;
-  bottom: 18%;
-  left: 50%;
-  font-size: 18px;
-  line-height: 25px;
+  &__text {
+    position: absolute;
+    bottom: 18%;
+    left: 50%;
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 
 .social-media {
@@ -56,26 +56,26 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-}
-.header__inner {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.header__subtitle {
-  font-size: 18px;
-  line-height: 25px;
-}
-.header__title {
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 73px;
-  margin-bottom: 50px;
-}
-.header__title span {
-  font-weight: 400;
-  font-size: 42px;
-  line-height: 57px;
+  &__inner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__subtitle {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 73px;
+    margin-bottom: 50px;
+    span {
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 57px;
+    }
+  }
 }
