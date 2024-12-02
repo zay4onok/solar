@@ -59,7 +59,7 @@ body {
   background-size: cover;
   text-align: center;
   &__inner {
-    height: 100vh;
+    height: calc(100vh - env(safe-area-inset-bottom));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,5 +132,11 @@ body {
       height: 70px;
       transform: translate(10px, 0);
     }
+  }
+}
+
+@media (max-height: 500px) {
+  .header__info-title {
+    margin-bottom: 25px;
   }
 }
