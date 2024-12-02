@@ -117,6 +117,72 @@ body {
   line-height: 25px;
 }
 
+.green-offer__inner {
+  display: flex;
+  gap: 90px;
+}
+.green-offer__tabs {
+  margin-bottom: 125px;
+}
+.green-offer__tab {
+  font-size: 18px;
+  line-height: 25px;
+  margin-right: 40px;
+  position: relative;
+  padding-bottom: 2px;
+}
+.green-offer__tab:last-of-type {
+  margin-right: 0;
+}
+.green-offer__tab::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  background: black;
+  transition: all 0.3s;
+}
+.green-offer__tab.--active::before {
+  width: 100%;
+}
+.green-offer__content {
+  margin-bottom: 100px;
+  list-style: none;
+  max-width: 510px;
+}
+.green-offer__content-item {
+  display: none;
+  gap: 40px;
+}
+.green-offer__content-item.--active {
+  display: flex;
+}
+.green-offer__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 40px;
+  list-style: none;
+  max-width: 510px;
+}
+.green-offer__list-item {
+  max-width: 235px;
+}
+.green-offer__list-title {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 5px;
+}
+.green-offer__box-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  max-width: 600px;
+  margin-bottom: 17px;
+}
+
 @media (max-width: 1200px) {
   .title {
     margin-top: 100px;
