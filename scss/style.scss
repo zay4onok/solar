@@ -39,6 +39,12 @@ body {
   }
   &__img {
     transform: translate(15px, 0);
+    &-fill {
+      transition: all 0.3s;
+    }
+  }
+  &:hover &__img-fill {
+    fill: #a9a32a;
   }
 }
 

@@ -39,6 +39,12 @@ body {
 .link-box__img {
   transform: translate(15px, 0);
 }
+.link-box__img-fill {
+  transition: all 0.3s;
+}
+.link-box:hover .link-box__img-fill {
+  fill: #a9a32a;
+}
 
 .social-media {
   display: flex;
