@@ -43,6 +43,25 @@ body {
   text-transform: uppercase;
 }
 
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  bottom: -32px;
+}
+.slick-prev {
+  left: 276px;
+}
+.slick-next {
+  left: 338px;
+}
+
 .link-box {
   &__text {
     font-size: 18px;
