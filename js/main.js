@@ -14,4 +14,3 @@ tabs.forEach((tab) => {
     targetElement.classList.add("--active");
   });
 });
-

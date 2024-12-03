@@ -212,6 +212,43 @@ body {
   }
 }
 
+.clients {
+  &__slider {
+    list-style: none;
+  }
+
+  &__item-inner {
+    display: flex;
+    gap: 90px;
+  }
+
+  &__item-title {
+    max-width: 478px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  &__item-list {
+    list-style: none;
+    margin-bottom: 65px;
+    margin-left: 51px;
+  }
+
+  &__list-item {
+    margin-bottom: 15px;
+  }
+
+  .link-box {
+    &__text {
+      transform: translate(-55px, -15px);
+    }
+    &__img {
+      transform: translate(0, 5px);
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .title {
     margin-top: 100px;

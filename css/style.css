@@ -199,6 +199,34 @@ body {
   color: #fff;
 }
 
+.clients__slider {
+  list-style: none;
+}
+.clients__item-inner {
+  display: flex;
+  gap: 90px;
+}
+.clients__item-title {
+  max-width: 478px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 25px;
+}
+.clients__item-list {
+  list-style: none;
+  margin-bottom: 65px;
+  margin-left: 51px;
+}
+.clients__list-item {
+  margin-bottom: 15px;
+}
+.clients .link-box__text {
+  transform: translate(-55px, -15px);
+}
+.clients .link-box__img {
+  transform: translate(0, 5px);
+}
+
 @media (max-width: 1200px) {
   .title {
     margin-top: 100px;
