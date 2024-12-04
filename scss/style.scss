@@ -381,6 +381,18 @@ body {
   .slick-next {
     left: calc(50% + 40px);
   }
+  .five-steps {
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+      text-align: center;
+    }
+    &__img {
+      margin-top: 0;
+    }
+  }
 }
 
 @media (max-width: 800px) {
@@ -427,6 +439,19 @@ body {
     height: 200px;
     width: auto;
   }
+  .five-steps {
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+      text-align: center;
+    }
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 @media (max-width: 520px) {
   .blockquote {
@@ -447,7 +472,7 @@ body {
     }
   }
   .title {
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 50px;
   }
   .services {
@@ -469,6 +494,20 @@ body {
     &__text {
       font-size: 24px;
       line-height: 1.5;
+    }
+  }
+  .five-steps {
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+      gap: 45px;
+    }
+    &__item {
+      text-align: center;
+    }
+    &__img {
+      width: 100%;
+      height: auto;
     }
   }
 }
