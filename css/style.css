@@ -248,6 +248,28 @@ body {
   transform: translate(0, 5px);
 }
 
+.five-steps__inner {
+  display: flex;
+  gap: 90px;
+}
+.five-steps__list {
+  list-style: none;
+  max-width: 510px;
+}
+.five-steps__item {
+  margin-bottom: 30px;
+}
+.five-steps__item-number {
+  margin-bottom: 11px;
+}
+.five-steps__item-title {
+  font-size: 18px;
+  line-height: 1.4;
+}
+.five-steps__img {
+  margin-top: 150px;
+}
+
 @media (max-width: 1200px) {
   .title {
     margin-top: 100px;

@@ -268,6 +268,36 @@ body {
   }
 }
 
+.five-steps {
+  &__inner {
+    display: flex;
+    gap: 90px;
+  }
+
+  &__content {
+  }
+
+  &__list {
+    list-style: none;
+    max-width: 510px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    &-number {
+      margin-bottom: 11px;
+    }
+
+    &-title {
+      font-size: 18px;
+      line-height: 1.4;
+    }
+  }
+  &__img {
+    margin-top: 150px;
+  }
+}
+
 @media (max-width: 1200px) {
   .title {
     margin-top: 100px;
