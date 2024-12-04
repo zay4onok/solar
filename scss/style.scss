@@ -92,6 +92,17 @@ body {
   gap: 20px;
   list-style: none;
   margin-bottom: 38px;
+  &__item {
+    &-fill {
+      transition: all 0.3s;
+    }
+    &-link:focus &-fill {
+      fill: #a9a32a;
+    }
+    &:hover &-fill {
+      fill: #a9a32a;
+    }
+  }
 }
 
 .header {

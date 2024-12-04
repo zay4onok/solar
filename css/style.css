@@ -95,6 +95,15 @@ body {
   list-style: none;
   margin-bottom: 38px;
 }
+.social-media__item-fill {
+  transition: all 0.3s;
+}
+.social-media__item-link:focus .social-media__item-fill {
+  fill: #a9a32a;
+}
+.social-media__item:hover .social-media__item-fill {
+  fill: #a9a32a;
+}
 
 .header {
   color: #fff;
