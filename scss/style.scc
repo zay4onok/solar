@@ -340,17 +340,15 @@ body {
   &__bottom {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 50px;
+    align-items: center;
     .logo {
       padding-top: 0;
     }
     .social-media {
-      margin-top: -13px;
       margin-bottom: 0;
     }
     &-text {
       color: #fff;
-      padding-top: 10px;
     }
   }
 }
@@ -514,36 +512,15 @@ body {
       justify-content: space-between;
       align-items: center;
       gap: 0;
-      padding-bottom: 50px;
     }
     &__address-text {
       text-align: center;
-    }
-    &__bottom {
-      flex-direction: column;
-      align-items: center;
-      gap: 30px;
-      padding-top: 50px;
-      .logo {
-        padding-top: 0;
-      }
-      .social-media {
-        margin-top: -13px;
-        margin-bottom: 0;
-      }
-      &-text {
-        color: #fff;
-        padding-top: 0;
-      }
     }
   }
   .form {
     &__btn {
       text-align: center;
     }
-  }
-  .last {
-    order: 1;
   }
 }
 
