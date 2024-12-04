@@ -7,6 +7,7 @@
 a {
   color: inherit;
   text-decoration: none;
+  outline: none;
 }
 
 .container {
@@ -21,7 +22,6 @@ html {
 
 body {
   font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   color: #303030;
@@ -48,6 +48,7 @@ body {
   border: none;
   cursor: pointer;
   padding: 0;
+  outline: none;
 }
 
 .slick-prev,
@@ -63,6 +64,7 @@ body {
 }
 
 .link-box {
+  cursor: pointer;
   &__text {
     font-size: 18px;
     line-height: 25px;
@@ -75,7 +77,10 @@ body {
       transition: all 0.3s;
     }
   }
-  &:hover &__img-fill {
+  &__link:hover &__img-fill {
+    fill: #a9a32a;
+  }
+  &__link:focus &__img-fill {
     fill: #a9a32a;
   }
 }
@@ -295,6 +300,86 @@ body {
   }
   &__img {
     margin-top: 150px;
+  }
+}
+
+.footer {
+  background: url(../images/footer-bg.jpg) no-repeat center / cover;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+  }
+
+  &__form {
+    width: 510px;
+  }
+
+  &__title {
+    margin-top: 70px;
+    color: #fff;
+  }
+
+  &__contacts {
+    width: 600px;
+  }
+
+  &__address {
+    font-style: normal;
+  }
+
+  &__address-text {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.39;
+  }
+
+  &__bottom {
+  }
+}
+
+.form {
+  &__input {
+    display: block;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    margin-bottom: 60px;
+    padding: 10px;
+    outline: none;
+    color: #fff;
+    &::placeholder {
+      font-family: "Noto Sans", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: #fff;
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+  &__btn {
+    color: #fff;
+    outline: none;
+    transition: all 0.3s;
+    &-text {
+      display: inline-block;
+      transform: translate(-60px, -20px);
+      font-size: 18px;
+      line-height: 25px;
+    }
+    &:hover .form__img-fill {
+      fill: #a9a32a;
+    }
+    &:focus .form__img-fill {
+      fill: #a9a32a;
+    }
+  }
+  &__img {
+    &-fill {
+      transition: all 0.3s;
+    }
   }
 }
 

@@ -7,6 +7,7 @@
 a {
   color: inherit;
   text-decoration: none;
+  outline: none;
 }
 
 .container {
@@ -21,7 +22,6 @@ html {
 
 body {
   font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   color: #303030;
@@ -48,6 +48,7 @@ body {
   border: none;
   cursor: pointer;
   padding: 0;
+  outline: none;
 }
 
 .slick-prev,
@@ -64,6 +65,9 @@ body {
   left: 338px;
 }
 
+.link-box {
+  cursor: pointer;
+}
 .link-box__text {
   font-size: 18px;
   line-height: 25px;
@@ -76,7 +80,10 @@ body {
 .link-box__img-fill {
   transition: all 0.3s;
 }
-.link-box:hover .link-box__img-fill {
+.link-box__link:hover .link-box__img-fill {
+  fill: #a9a32a;
+}
+.link-box__link:focus .link-box__img-fill {
   fill: #a9a32a;
 }
 
@@ -268,6 +275,81 @@ body {
 }
 .five-steps__img {
   margin-top: 150px;
+}
+
+.footer {
+  background: url(../images/footer-bg.jpg) no-repeat center/cover;
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+}
+.footer__form {
+  width: 510px;
+}
+.footer__title {
+  margin-top: 70px;
+  color: #fff;
+}
+.footer__contacts {
+  width: 600px;
+}
+.footer__address {
+  font-style: normal;
+}
+.footer__address-text {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.39;
+}
+.form__input {
+  display: block;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  margin-bottom: 60px;
+  padding: 10px;
+  outline: none;
+  color: #fff;
+}
+.form__input::-moz-placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 14px;
+  line-height: 19px;
+}
+.form__input::placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  font-size: 14px;
+  line-height: 19px;
+}
+.form__btn {
+  color: #fff;
+  outline: none;
+  transition: all 0.3s;
+}
+.form__btn-text {
+  display: inline-block;
+  transform: translate(-60px, -20px);
+  font-size: 18px;
+  line-height: 25px;
+}
+.form__btn:hover .form__img-fill {
+  fill: #a9a32a;
+}
+.form__btn:focus .form__img-fill {
+  fill: #a9a32a;
+}
+.form__img-fill {
+  transition: all 0.3s;
 }
 
 @media (max-width: 1200px) {
